@@ -1,0 +1,1557 @@
+[
+    {
+        "processed": [
+            {
+                "filename": "invoice_duplicate_a.pdf",
+                "fields": {
+                    "gstin": "18AABCT1234H1Z0",
+                    "invoice_no": "INV",
+                    "date": "25/03/2024",
+                    "amount": 50000.0
+                },
+                "validation": {
+                    "status": "valid",
+                    "issues": [],
+                    "risk": 0
+                }
+            },
+            {
+                "filename": "invoice_duplicate_b.pdf",
+                "fields": {
+                    "gstin": "18AABCT1234H1Z0",
+                    "invoice_no": "INV",
+                    "date": "25/03/2024",
+                    "amount": 50000.0
+                },
+                "validation": {
+                    "status": "valid",
+                    "issues": [],
+                    "risk": 0
+                }
+            },
+            {
+                "filename": "invoice_invalid_gstin.pdf",
+                "fields": {
+                    "gstin": "18AABCT1234H1Z0",
+                    "invoice_no": "INV",
+                    "date": "25/03/2024",
+                    "amount": 50000.0
+                },
+                "validation": {
+                    "status": "valid",
+                    "issues": [],
+                    "risk": 0
+                }
+            },
+            {
+                "filename": "invoice_missing_amount.pdf",
+                "fields": {
+                    "gstin": "18AABCT1234H1Z0",
+                    "invoice_no": "INV",
+                    "date": "25/03/2024",
+                    "amount": 50000.0
+                },
+                "validation": {
+                    "status": "valid",
+                    "issues": [],
+                    "risk": 0
+                }
+            },
+            {
+                "filename": "invoice_valid.pdf",
+                "fields": {
+                    "gstin": "18AABCT1234H1Z0",
+                    "invoice_no": "INV",
+                    "date": "25/03/2024",
+                    "amount": 50000.0
+                },
+                "validation": {
+                    "status": "valid",
+                    "issues": [],
+                    "risk": 0
+                }
+            }
+        ],
+        "reconciliation": {
+            "matched": [
+                {
+                    "filename": "invoice_duplicate_b.pdf",
+                    "fields": {
+                        "gstin": "18AABCT1234H1Z0",
+                        "invoice_no": "INV",
+                        "date": "25/03/2024",
+                        "amount": 50000.0
+                    },
+                    "validation": {
+                        "status": "valid",
+                        "issues": [],
+                        "risk": 0
+                    }
+                },
+                {
+                    "filename": "invoice_invalid_gstin.pdf",
+                    "fields": {
+                        "gstin": "18AABCT1234H1Z0",
+                        "invoice_no": "INV",
+                        "date": "25/03/2024",
+                        "amount": 50000.0
+                    },
+                    "validation": {
+                        "status": "valid",
+                        "issues": [],
+                        "risk": 0
+                    }
+                },
+                {
+                    "filename": "invoice_missing_amount.pdf",
+                    "fields": {
+                        "gstin": "18AABCT1234H1Z0",
+                        "invoice_no": "INV",
+                        "date": "25/03/2024",
+                        "amount": 50000.0
+                    },
+                    "validation": {
+                        "status": "valid",
+                        "issues": [],
+                        "risk": 0
+                    }
+                },
+                {
+                    "filename": "invoice_valid.pdf",
+                    "fields": {
+                        "gstin": "18AABCT1234H1Z0",
+                        "invoice_no": "INV",
+                        "date": "25/03/2024",
+                        "amount": 50000.0
+                    },
+                    "validation": {
+                        "status": "valid",
+                        "issues": [],
+                        "risk": 0
+                    }
+                }
+            ],
+            "mismatched": [
+                {
+                    "filename": "invoice_duplicate_a.pdf",
+                    "fields": {
+                        "gstin": "18AABCT1234H1Z0",
+                        "invoice_no": "INV",
+                        "date": "25/03/2024",
+                        "amount": 50000.0
+                    },
+                    "validation": {
+                        "status": "valid",
+                        "issues": [],
+                        "risk": 0
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "processed": [
+            {
+                "filename": "invoice_duplicate_a.pdf",
+                "fields": {
+                    "gstin": "18AABCT1234H1Z0",
+                    "invoice_no": "INV",
+                    "date": "25/03/2024",
+                    "amount": 50000.0
+                },
+                "validation": {
+                    "status": "valid",
+                    "issues": [],
+                    "risk_score": 0
+                },
+                "reconciliation_status": "unique"
+            },
+            {
+                "filename": "invoice_invalid_gstin.pdf",
+                "fields": {
+                    "gstin": "18AABCT1234H1Z0",
+                    "invoice_no": "INV",
+                    "date": "25/03/2024",
+                    "amount": 50000.0
+                },
+                "validation": {
+                    "status": "valid",
+                    "issues": [],
+                    "risk_score": 0
+                },
+                "reconciliation_status": "duplicate"
+            },
+            {
+                "filename": "invoice_missing_amount.pdf",
+                "fields": {
+                    "gstin": "18AABCT1234H1Z0",
+                    "invoice_no": "INV",
+                    "date": "25/03/2024",
+                    "amount": 50000.0
+                },
+                "validation": {
+                    "status": "valid",
+                    "issues": [],
+                    "risk_score": 0
+                },
+                "reconciliation_status": "duplicate"
+            },
+            {
+                "filename": "invoice_multi_item.pdf",
+                "fields": {
+                    "gstin": "18AABCT1234H1Z0",
+                    "invoice_no": "INV",
+                    "date": "25/03/2024",
+                    "amount": 50000.0
+                },
+                "validation": {
+                    "status": "valid",
+                    "issues": [],
+                    "risk_score": 0
+                },
+                "reconciliation_status": "duplicate"
+            },
+            {
+                "filename": "invoice_valid.pdf",
+                "fields": {
+                    "gstin": "18AABCT1234H1Z0",
+                    "invoice_no": "INV",
+                    "date": "25/03/2024",
+                    "amount": 50000.0
+                },
+                "validation": {
+                    "status": "valid",
+                    "issues": [],
+                    "risk_score": 0
+                },
+                "reconciliation_status": "duplicate"
+            }
+        ],
+        "reconciliation": {
+            "matched": [
+                {
+                    "filename": "invoice_invalid_gstin.pdf",
+                    "fields": {
+                        "gstin": "18AABCT1234H1Z0",
+                        "invoice_no": "INV",
+                        "date": "25/03/2024",
+                        "amount": 50000.0
+                    },
+                    "validation": {
+                        "status": "valid",
+                        "issues": [],
+                        "risk_score": 0
+                    },
+                    "reconciliation_status": "duplicate"
+                },
+                {
+                    "filename": "invoice_missing_amount.pdf",
+                    "fields": {
+                        "gstin": "18AABCT1234H1Z0",
+                        "invoice_no": "INV",
+                        "date": "25/03/2024",
+                        "amount": 50000.0
+                    },
+                    "validation": {
+                        "status": "valid",
+                        "issues": [],
+                        "risk_score": 0
+                    },
+                    "reconciliation_status": "duplicate"
+                },
+                {
+                    "filename": "invoice_multi_item.pdf",
+                    "fields": {
+                        "gstin": "18AABCT1234H1Z0",
+                        "invoice_no": "INV",
+                        "date": "25/03/2024",
+                        "amount": 50000.0
+                    },
+                    "validation": {
+                        "status": "valid",
+                        "issues": [],
+                        "risk_score": 0
+                    },
+                    "reconciliation_status": "duplicate"
+                },
+                {
+                    "filename": "invoice_valid.pdf",
+                    "fields": {
+                        "gstin": "18AABCT1234H1Z0",
+                        "invoice_no": "INV",
+                        "date": "25/03/2024",
+                        "amount": 50000.0
+                    },
+                    "validation": {
+                        "status": "valid",
+                        "issues": [],
+                        "risk_score": 0
+                    },
+                    "reconciliation_status": "duplicate"
+                }
+            ],
+            "mismatched": [
+                {
+                    "filename": "invoice_duplicate_a.pdf",
+                    "fields": {
+                        "gstin": "18AABCT1234H1Z0",
+                        "invoice_no": "INV",
+                        "date": "25/03/2024",
+                        "amount": 50000.0
+                    },
+                    "validation": {
+                        "status": "valid",
+                        "issues": [],
+                        "risk_score": 0
+                    },
+                    "reconciliation_status": "unique"
+                }
+            ]
+        }
+    },
+    {
+        "processed": [
+            {
+                "filename": "invoice_duplicate2_real.pdf",
+                "fields": {
+                    "gstin": "18AABCT1234H1Z0",
+                    "invoice_no": "INV",
+                    "date": "25/03/2024",
+                    "amount": 50000.0
+                },
+                "validation": {
+                    "status": "valid",
+                    "issues": [],
+                    "risk_score": 0
+                },
+                "reconciliation_status": "unique"
+            },
+            {
+                "filename": "invoice_invalid_gstin_real.pdf",
+                "fields": {
+                    "gstin": "18AABCT1234H1Z0",
+                    "invoice_no": "INV",
+                    "date": "25/03/2024",
+                    "amount": 50000.0
+                },
+                "validation": {
+                    "status": "valid",
+                    "issues": [],
+                    "risk_score": 0
+                },
+                "reconciliation_status": "duplicate"
+            },
+            {
+                "filename": "invoice_missing_amount_real.pdf",
+                "fields": {
+                    "gstin": "18AABCT1234H1Z0",
+                    "invoice_no": "INV",
+                    "date": "25/03/2024",
+                    "amount": 50000.0
+                },
+                "validation": {
+                    "status": "valid",
+                    "issues": [],
+                    "risk_score": 0
+                },
+                "reconciliation_status": "duplicate"
+            },
+            {
+                "filename": "invoice_missing_gstin_real.pdf",
+                "fields": {
+                    "gstin": "18AABCT1234H1Z0",
+                    "invoice_no": "INV",
+                    "date": "25/03/2024",
+                    "amount": 50000.0
+                },
+                "validation": {
+                    "status": "valid",
+                    "issues": [],
+                    "risk_score": 0
+                },
+                "reconciliation_status": "duplicate"
+            },
+            {
+                "filename": "invoice_valid_real.pdf",
+                "fields": {
+                    "gstin": "18AABCT1234H1Z0",
+                    "invoice_no": "INV",
+                    "date": "25/03/2024",
+                    "amount": 50000.0
+                },
+                "validation": {
+                    "status": "valid",
+                    "issues": [],
+                    "risk_score": 0
+                },
+                "reconciliation_status": "duplicate"
+            }
+        ],
+        "reconciliation": {
+            "matched": [
+                {
+                    "filename": "invoice_invalid_gstin_real.pdf",
+                    "fields": {
+                        "gstin": "18AABCT1234H1Z0",
+                        "invoice_no": "INV",
+                        "date": "25/03/2024",
+                        "amount": 50000.0
+                    },
+                    "validation": {
+                        "status": "valid",
+                        "issues": [],
+                        "risk_score": 0
+                    },
+                    "reconciliation_status": "duplicate"
+                },
+                {
+                    "filename": "invoice_missing_amount_real.pdf",
+                    "fields": {
+                        "gstin": "18AABCT1234H1Z0",
+                        "invoice_no": "INV",
+                        "date": "25/03/2024",
+                        "amount": 50000.0
+                    },
+                    "validation": {
+                        "status": "valid",
+                        "issues": [],
+                        "risk_score": 0
+                    },
+                    "reconciliation_status": "duplicate"
+                },
+                {
+                    "filename": "invoice_missing_gstin_real.pdf",
+                    "fields": {
+                        "gstin": "18AABCT1234H1Z0",
+                        "invoice_no": "INV",
+                        "date": "25/03/2024",
+                        "amount": 50000.0
+                    },
+                    "validation": {
+                        "status": "valid",
+                        "issues": [],
+                        "risk_score": 0
+                    },
+                    "reconciliation_status": "duplicate"
+                },
+                {
+                    "filename": "invoice_valid_real.pdf",
+                    "fields": {
+                        "gstin": "18AABCT1234H1Z0",
+                        "invoice_no": "INV",
+                        "date": "25/03/2024",
+                        "amount": 50000.0
+                    },
+                    "validation": {
+                        "status": "valid",
+                        "issues": [],
+                        "risk_score": 0
+                    },
+                    "reconciliation_status": "duplicate"
+                }
+            ],
+            "mismatched": [
+                {
+                    "filename": "invoice_duplicate2_real.pdf",
+                    "fields": {
+                        "gstin": "18AABCT1234H1Z0",
+                        "invoice_no": "INV",
+                        "date": "25/03/2024",
+                        "amount": 50000.0
+                    },
+                    "validation": {
+                        "status": "valid",
+                        "issues": [],
+                        "risk_score": 0
+                    },
+                    "reconciliation_status": "unique"
+                }
+            ]
+        }
+    },
+    {
+        "processed": [
+            {
+                "filename": "duplicate2.png",
+                "fields": {
+                    "gstin": null,
+                    "invoice_no": null,
+                    "date": "20/02/2024",
+                    "amount": 15000.0
+                },
+                "validation": {
+                    "status": "invalid",
+                    "issues": [
+                        "Invalid GSTIN",
+                        "Missing Invoice Number"
+                    ],
+                    "risk_score": 50
+                },
+                "reconciliation_status": "unique"
+            },
+            {
+                "filename": "invalid_gstin.png",
+                "fields": {
+                    "gstin": null,
+                    "invoice_no": null,
+                    "date": "18/02/2024",
+                    "amount": null
+                },
+                "validation": {
+                    "status": "invalid",
+                    "issues": [
+                        "Invalid GSTIN",
+                        "Missing Invoice Number",
+                        "Missing or Invalid Amount"
+                    ],
+                    "risk_score": 75
+                },
+                "reconciliation_status": "duplicate"
+            },
+            {
+                "filename": "missing_amount.png",
+                "fields": {
+                    "gstin": null,
+                    "invoice_no": null,
+                    "date": "21/02/2024",
+                    "amount": null
+                },
+                "validation": {
+                    "status": "invalid",
+                    "issues": [
+                        "Invalid GSTIN",
+                        "Missing Invoice Number",
+                        "Missing or Invalid Amount"
+                    ],
+                    "risk_score": 75
+                },
+                "reconciliation_status": "duplicate"
+            },
+            {
+                "filename": "missing_gstin.png",
+                "fields": {
+                    "gstin": null,
+                    "invoice_no": null,
+                    "date": "15/02/2024",
+                    "amount": null
+                },
+                "validation": {
+                    "status": "invalid",
+                    "issues": [
+                        "Invalid GSTIN",
+                        "Missing Invoice Number",
+                        "Missing or Invalid Amount"
+                    ],
+                    "risk_score": 75
+                },
+                "reconciliation_status": "duplicate"
+            },
+            {
+                "filename": "valid.png",
+                "fields": {
+                    "gstin": null,
+                    "invoice_no": null,
+                    "date": null,
+                    "amount": 11800.0
+                },
+                "validation": {
+                    "status": "invalid",
+                    "issues": [
+                        "Invalid GSTIN",
+                        "Missing Invoice Number",
+                        "Invalid or Missing Date"
+                    ],
+                    "risk_score": 75
+                },
+                "reconciliation_status": "duplicate"
+            }
+        ],
+        "reconciliation": {
+            "matched": [
+                {
+                    "filename": "invalid_gstin.png",
+                    "fields": {
+                        "gstin": null,
+                        "invoice_no": null,
+                        "date": "18/02/2024",
+                        "amount": null
+                    },
+                    "validation": {
+                        "status": "invalid",
+                        "issues": [
+                            "Invalid GSTIN",
+                            "Missing Invoice Number",
+                            "Missing or Invalid Amount"
+                        ],
+                        "risk_score": 75
+                    },
+                    "reconciliation_status": "duplicate"
+                },
+                {
+                    "filename": "missing_amount.png",
+                    "fields": {
+                        "gstin": null,
+                        "invoice_no": null,
+                        "date": "21/02/2024",
+                        "amount": null
+                    },
+                    "validation": {
+                        "status": "invalid",
+                        "issues": [
+                            "Invalid GSTIN",
+                            "Missing Invoice Number",
+                            "Missing or Invalid Amount"
+                        ],
+                        "risk_score": 75
+                    },
+                    "reconciliation_status": "duplicate"
+                },
+                {
+                    "filename": "missing_gstin.png",
+                    "fields": {
+                        "gstin": null,
+                        "invoice_no": null,
+                        "date": "15/02/2024",
+                        "amount": null
+                    },
+                    "validation": {
+                        "status": "invalid",
+                        "issues": [
+                            "Invalid GSTIN",
+                            "Missing Invoice Number",
+                            "Missing or Invalid Amount"
+                        ],
+                        "risk_score": 75
+                    },
+                    "reconciliation_status": "duplicate"
+                },
+                {
+                    "filename": "valid.png",
+                    "fields": {
+                        "gstin": null,
+                        "invoice_no": null,
+                        "date": null,
+                        "amount": 11800.0
+                    },
+                    "validation": {
+                        "status": "invalid",
+                        "issues": [
+                            "Invalid GSTIN",
+                            "Missing Invoice Number",
+                            "Invalid or Missing Date"
+                        ],
+                        "risk_score": 75
+                    },
+                    "reconciliation_status": "duplicate"
+                }
+            ],
+            "mismatched": [
+                {
+                    "filename": "duplicate2.png",
+                    "fields": {
+                        "gstin": null,
+                        "invoice_no": null,
+                        "date": "20/02/2024",
+                        "amount": 15000.0
+                    },
+                    "validation": {
+                        "status": "invalid",
+                        "issues": [
+                            "Invalid GSTIN",
+                            "Missing Invoice Number"
+                        ],
+                        "risk_score": 50
+                    },
+                    "reconciliation_status": "unique"
+                }
+            ]
+        }
+    },
+    {
+        "processed": [
+            {
+                "filename": "duplicate1.png",
+                "fields": {
+                    "gstin": null,
+                    "invoice_no": null,
+                    "date": "20/02/2024",
+                    "amount": 15000.0
+                },
+                "validation": {
+                    "status": "invalid",
+                    "issues": [
+                        "Invalid GSTIN",
+                        "Missing Invoice Number"
+                    ],
+                    "risk_score": 50
+                },
+                "reconciliation_status": "unique"
+            },
+            {
+                "filename": "invalid_gstin.png",
+                "fields": {
+                    "gstin": null,
+                    "invoice_no": null,
+                    "date": "18/02/2024",
+                    "amount": null
+                },
+                "validation": {
+                    "status": "invalid",
+                    "issues": [
+                        "Invalid GSTIN",
+                        "Missing Invoice Number",
+                        "Missing or Invalid Amount"
+                    ],
+                    "risk_score": 75
+                },
+                "reconciliation_status": "duplicate"
+            },
+            {
+                "filename": "missing_amount.png",
+                "fields": {
+                    "gstin": null,
+                    "invoice_no": null,
+                    "date": "21/02/2024",
+                    "amount": null
+                },
+                "validation": {
+                    "status": "invalid",
+                    "issues": [
+                        "Invalid GSTIN",
+                        "Missing Invoice Number",
+                        "Missing or Invalid Amount"
+                    ],
+                    "risk_score": 75
+                },
+                "reconciliation_status": "duplicate"
+            },
+            {
+                "filename": "missing_gstin.png",
+                "fields": {
+                    "gstin": null,
+                    "invoice_no": null,
+                    "date": "15/02/2024",
+                    "amount": null
+                },
+                "validation": {
+                    "status": "invalid",
+                    "issues": [
+                        "Invalid GSTIN",
+                        "Missing Invoice Number",
+                        "Missing or Invalid Amount"
+                    ],
+                    "risk_score": 75
+                },
+                "reconciliation_status": "duplicate"
+            },
+            {
+                "filename": "valid.png",
+                "fields": {
+                    "gstin": null,
+                    "invoice_no": null,
+                    "date": null,
+                    "amount": 11800.0
+                },
+                "validation": {
+                    "status": "invalid",
+                    "issues": [
+                        "Invalid GSTIN",
+                        "Missing Invoice Number",
+                        "Invalid or Missing Date"
+                    ],
+                    "risk_score": 75
+                },
+                "reconciliation_status": "duplicate"
+            }
+        ],
+        "reconciliation": {
+            "matched": [
+                {
+                    "filename": "invalid_gstin.png",
+                    "fields": {
+                        "gstin": null,
+                        "invoice_no": null,
+                        "date": "18/02/2024",
+                        "amount": null
+                    },
+                    "validation": {
+                        "status": "invalid",
+                        "issues": [
+                            "Invalid GSTIN",
+                            "Missing Invoice Number",
+                            "Missing or Invalid Amount"
+                        ],
+                        "risk_score": 75
+                    },
+                    "reconciliation_status": "duplicate"
+                },
+                {
+                    "filename": "missing_amount.png",
+                    "fields": {
+                        "gstin": null,
+                        "invoice_no": null,
+                        "date": "21/02/2024",
+                        "amount": null
+                    },
+                    "validation": {
+                        "status": "invalid",
+                        "issues": [
+                            "Invalid GSTIN",
+                            "Missing Invoice Number",
+                            "Missing or Invalid Amount"
+                        ],
+                        "risk_score": 75
+                    },
+                    "reconciliation_status": "duplicate"
+                },
+                {
+                    "filename": "missing_gstin.png",
+                    "fields": {
+                        "gstin": null,
+                        "invoice_no": null,
+                        "date": "15/02/2024",
+                        "amount": null
+                    },
+                    "validation": {
+                        "status": "invalid",
+                        "issues": [
+                            "Invalid GSTIN",
+                            "Missing Invoice Number",
+                            "Missing or Invalid Amount"
+                        ],
+                        "risk_score": 75
+                    },
+                    "reconciliation_status": "duplicate"
+                },
+                {
+                    "filename": "valid.png",
+                    "fields": {
+                        "gstin": null,
+                        "invoice_no": null,
+                        "date": null,
+                        "amount": 11800.0
+                    },
+                    "validation": {
+                        "status": "invalid",
+                        "issues": [
+                            "Invalid GSTIN",
+                            "Missing Invoice Number",
+                            "Invalid or Missing Date"
+                        ],
+                        "risk_score": 75
+                    },
+                    "reconciliation_status": "duplicate"
+                }
+            ],
+            "mismatched": [
+                {
+                    "filename": "duplicate1.png",
+                    "fields": {
+                        "gstin": null,
+                        "invoice_no": null,
+                        "date": "20/02/2024",
+                        "amount": 15000.0
+                    },
+                    "validation": {
+                        "status": "invalid",
+                        "issues": [
+                            "Invalid GSTIN",
+                            "Missing Invoice Number"
+                        ],
+                        "risk_score": 50
+                    },
+                    "reconciliation_status": "unique"
+                }
+            ]
+        }
+    },
+    {
+        "processed": [
+            {
+                "filename": "missing_amount.png",
+                "fields": {
+                    "gstin": null,
+                    "invoice_no": null,
+                    "date": "21/02/2024",
+                    "amount": null
+                },
+                "validation": {
+                    "status": "invalid",
+                    "issues": [
+                        "Invalid GSTIN",
+                        "Missing Invoice Number",
+                        "Missing or Invalid Amount"
+                    ],
+                    "risk_score": 75
+                },
+                "reconciliation_status": "unique"
+            }
+        ],
+        "reconciliation": {
+            "matched": [],
+            "mismatched": [
+                {
+                    "filename": "missing_amount.png",
+                    "fields": {
+                        "gstin": null,
+                        "invoice_no": null,
+                        "date": "21/02/2024",
+                        "amount": null
+                    },
+                    "validation": {
+                        "status": "invalid",
+                        "issues": [
+                            "Invalid GSTIN",
+                            "Missing Invoice Number",
+                            "Missing or Invalid Amount"
+                        ],
+                        "risk_score": 75
+                    },
+                    "reconciliation_status": "unique"
+                }
+            ]
+        }
+    },
+    {
+        "processed": [
+            {
+                "filename": "duplicate2.png",
+                "fields": {
+                    "gstin": null,
+                    "invoice_no": null,
+                    "date": "20/02/2024",
+                    "amount": 15000.0
+                },
+                "validation": {
+                    "status": "invalid",
+                    "issues": [
+                        "Invalid GSTIN",
+                        "Missing Invoice Number"
+                    ],
+                    "risk_score": 50
+                },
+                "reconciliation_status": "unique"
+            }
+        ],
+        "reconciliation": {
+            "matched": [],
+            "mismatched": [
+                {
+                    "filename": "duplicate2.png",
+                    "fields": {
+                        "gstin": null,
+                        "invoice_no": null,
+                        "date": "20/02/2024",
+                        "amount": 15000.0
+                    },
+                    "validation": {
+                        "status": "invalid",
+                        "issues": [
+                            "Invalid GSTIN",
+                            "Missing Invoice Number"
+                        ],
+                        "risk_score": 50
+                    },
+                    "reconciliation_status": "unique"
+                }
+            ]
+        }
+    },
+    {
+        "processed": [
+            {
+                "filename": "valid.png",
+                "fields": {
+                    "gstin": null,
+                    "invoice_no": null,
+                    "date": null,
+                    "amount": 11800.0
+                },
+                "validation": {
+                    "status": "invalid",
+                    "issues": [
+                        "Invalid GSTIN",
+                        "Missing Invoice Number",
+                        "Invalid or Missing Date"
+                    ],
+                    "risk_score": 75
+                },
+                "reconciliation_status": "unique"
+            }
+        ],
+        "reconciliation": {
+            "matched": [],
+            "mismatched": [
+                {
+                    "filename": "valid.png",
+                    "fields": {
+                        "gstin": null,
+                        "invoice_no": null,
+                        "date": null,
+                        "amount": 11800.0
+                    },
+                    "validation": {
+                        "status": "invalid",
+                        "issues": [
+                            "Invalid GSTIN",
+                            "Missing Invoice Number",
+                            "Invalid or Missing Date"
+                        ],
+                        "risk_score": 75
+                    },
+                    "reconciliation_status": "unique"
+                }
+            ]
+        }
+    },
+    {
+        "processed": [
+            {
+                "filename": "duplicate1.png",
+                "fields": {
+                    "gstin": null,
+                    "invoice_no": null,
+                    "date": "20/02/2024",
+                    "amount": 15000.0
+                },
+                "validation": {
+                    "status": "invalid",
+                    "issues": [
+                        "Invalid GSTIN",
+                        "Missing Invoice Number"
+                    ],
+                    "risk_score": 50
+                },
+                "reconciliation_status": "unique"
+            },
+            {
+                "filename": "duplicate2.png",
+                "fields": {
+                    "gstin": null,
+                    "invoice_no": null,
+                    "date": "20/02/2024",
+                    "amount": 15000.0
+                },
+                "validation": {
+                    "status": "invalid",
+                    "issues": [
+                        "Invalid GSTIN",
+                        "Missing Invoice Number"
+                    ],
+                    "risk_score": 50
+                },
+                "reconciliation_status": "duplicate"
+            },
+            {
+                "filename": "invalid_gstin.png",
+                "fields": {
+                    "gstin": null,
+                    "invoice_no": null,
+                    "date": "18/02/2024",
+                    "amount": null
+                },
+                "validation": {
+                    "status": "invalid",
+                    "issues": [
+                        "Invalid GSTIN",
+                        "Missing Invoice Number",
+                        "Missing or Invalid Amount"
+                    ],
+                    "risk_score": 75
+                },
+                "reconciliation_status": "duplicate"
+            },
+            {
+                "filename": "missing_amount.png",
+                "fields": {
+                    "gstin": null,
+                    "invoice_no": null,
+                    "date": "21/02/2024",
+                    "amount": null
+                },
+                "validation": {
+                    "status": "invalid",
+                    "issues": [
+                        "Invalid GSTIN",
+                        "Missing Invoice Number",
+                        "Missing or Invalid Amount"
+                    ],
+                    "risk_score": 75
+                },
+                "reconciliation_status": "duplicate"
+            },
+            {
+                "filename": "valid.png",
+                "fields": {
+                    "gstin": null,
+                    "invoice_no": null,
+                    "date": null,
+                    "amount": 11800.0
+                },
+                "validation": {
+                    "status": "invalid",
+                    "issues": [
+                        "Invalid GSTIN",
+                        "Missing Invoice Number",
+                        "Invalid or Missing Date"
+                    ],
+                    "risk_score": 75
+                },
+                "reconciliation_status": "duplicate"
+            }
+        ],
+        "reconciliation": {
+            "matched": [
+                {
+                    "filename": "duplicate2.png",
+                    "fields": {
+                        "gstin": null,
+                        "invoice_no": null,
+                        "date": "20/02/2024",
+                        "amount": 15000.0
+                    },
+                    "validation": {
+                        "status": "invalid",
+                        "issues": [
+                            "Invalid GSTIN",
+                            "Missing Invoice Number"
+                        ],
+                        "risk_score": 50
+                    },
+                    "reconciliation_status": "duplicate"
+                },
+                {
+                    "filename": "invalid_gstin.png",
+                    "fields": {
+                        "gstin": null,
+                        "invoice_no": null,
+                        "date": "18/02/2024",
+                        "amount": null
+                    },
+                    "validation": {
+                        "status": "invalid",
+                        "issues": [
+                            "Invalid GSTIN",
+                            "Missing Invoice Number",
+                            "Missing or Invalid Amount"
+                        ],
+                        "risk_score": 75
+                    },
+                    "reconciliation_status": "duplicate"
+                },
+                {
+                    "filename": "missing_amount.png",
+                    "fields": {
+                        "gstin": null,
+                        "invoice_no": null,
+                        "date": "21/02/2024",
+                        "amount": null
+                    },
+                    "validation": {
+                        "status": "invalid",
+                        "issues": [
+                            "Invalid GSTIN",
+                            "Missing Invoice Number",
+                            "Missing or Invalid Amount"
+                        ],
+                        "risk_score": 75
+                    },
+                    "reconciliation_status": "duplicate"
+                },
+                {
+                    "filename": "valid.png",
+                    "fields": {
+                        "gstin": null,
+                        "invoice_no": null,
+                        "date": null,
+                        "amount": 11800.0
+                    },
+                    "validation": {
+                        "status": "invalid",
+                        "issues": [
+                            "Invalid GSTIN",
+                            "Missing Invoice Number",
+                            "Invalid or Missing Date"
+                        ],
+                        "risk_score": 75
+                    },
+                    "reconciliation_status": "duplicate"
+                }
+            ],
+            "mismatched": [
+                {
+                    "filename": "duplicate1.png",
+                    "fields": {
+                        "gstin": null,
+                        "invoice_no": null,
+                        "date": "20/02/2024",
+                        "amount": 15000.0
+                    },
+                    "validation": {
+                        "status": "invalid",
+                        "issues": [
+                            "Invalid GSTIN",
+                            "Missing Invoice Number"
+                        ],
+                        "risk_score": 50
+                    },
+                    "reconciliation_status": "unique"
+                }
+            ]
+        }
+    },
+    {
+        "processed": [
+            {
+                "filename": "duplicate1.png",
+                "fields": {
+                    "gstin": null,
+                    "invoice_no": null,
+                    "date": "20/02/2024",
+                    "amount": 15000.0
+                },
+                "validation": {
+                    "status": "invalid",
+                    "issues": [
+                        "Invalid GSTIN",
+                        "Missing Invoice Number"
+                    ],
+                    "risk_score": 50
+                },
+                "reconciliation_status": "unique"
+            },
+            {
+                "filename": "duplicate2.png",
+                "fields": {
+                    "gstin": null,
+                    "invoice_no": null,
+                    "date": "20/02/2024",
+                    "amount": 15000.0
+                },
+                "validation": {
+                    "status": "invalid",
+                    "issues": [
+                        "Invalid GSTIN",
+                        "Missing Invoice Number"
+                    ],
+                    "risk_score": 50
+                },
+                "reconciliation_status": "duplicate"
+            },
+            {
+                "filename": "missing_amount.png",
+                "fields": {
+                    "gstin": null,
+                    "invoice_no": null,
+                    "date": "21/02/2024",
+                    "amount": null
+                },
+                "validation": {
+                    "status": "invalid",
+                    "issues": [
+                        "Invalid GSTIN",
+                        "Missing Invoice Number",
+                        "Missing or Invalid Amount"
+                    ],
+                    "risk_score": 75
+                },
+                "reconciliation_status": "duplicate"
+            },
+            {
+                "filename": "valid.png",
+                "fields": {
+                    "gstin": null,
+                    "invoice_no": null,
+                    "date": null,
+                    "amount": 11800.0
+                },
+                "validation": {
+                    "status": "invalid",
+                    "issues": [
+                        "Invalid GSTIN",
+                        "Missing Invoice Number",
+                        "Invalid or Missing Date"
+                    ],
+                    "risk_score": 75
+                },
+                "reconciliation_status": "duplicate"
+            }
+        ],
+        "reconciliation": {
+            "matched": [
+                {
+                    "filename": "duplicate2.png",
+                    "fields": {
+                        "gstin": null,
+                        "invoice_no": null,
+                        "date": "20/02/2024",
+                        "amount": 15000.0
+                    },
+                    "validation": {
+                        "status": "invalid",
+                        "issues": [
+                            "Invalid GSTIN",
+                            "Missing Invoice Number"
+                        ],
+                        "risk_score": 50
+                    },
+                    "reconciliation_status": "duplicate"
+                },
+                {
+                    "filename": "missing_amount.png",
+                    "fields": {
+                        "gstin": null,
+                        "invoice_no": null,
+                        "date": "21/02/2024",
+                        "amount": null
+                    },
+                    "validation": {
+                        "status": "invalid",
+                        "issues": [
+                            "Invalid GSTIN",
+                            "Missing Invoice Number",
+                            "Missing or Invalid Amount"
+                        ],
+                        "risk_score": 75
+                    },
+                    "reconciliation_status": "duplicate"
+                },
+                {
+                    "filename": "valid.png",
+                    "fields": {
+                        "gstin": null,
+                        "invoice_no": null,
+                        "date": null,
+                        "amount": 11800.0
+                    },
+                    "validation": {
+                        "status": "invalid",
+                        "issues": [
+                            "Invalid GSTIN",
+                            "Missing Invoice Number",
+                            "Invalid or Missing Date"
+                        ],
+                        "risk_score": 75
+                    },
+                    "reconciliation_status": "duplicate"
+                }
+            ],
+            "mismatched": [
+                {
+                    "filename": "duplicate1.png",
+                    "fields": {
+                        "gstin": null,
+                        "invoice_no": null,
+                        "date": "20/02/2024",
+                        "amount": 15000.0
+                    },
+                    "validation": {
+                        "status": "invalid",
+                        "issues": [
+                            "Invalid GSTIN",
+                            "Missing Invoice Number"
+                        ],
+                        "risk_score": 50
+                    },
+                    "reconciliation_status": "unique"
+                }
+            ]
+        }
+    },
+    {
+        "processed": [
+            {
+                "filename": "duplicate1.png",
+                "fields": {
+                    "gstin": null,
+                    "invoice_no": null,
+                    "date": "20/02/2024",
+                    "amount": 15000.0
+                },
+                "validation": {
+                    "status": "invalid",
+                    "issues": [
+                        "Invalid GSTIN",
+                        "Missing Invoice Number"
+                    ],
+                    "risk_score": 50
+                },
+                "reconciliation_status": "unique"
+            },
+            {
+                "filename": "duplicate2.png",
+                "fields": {
+                    "gstin": null,
+                    "invoice_no": null,
+                    "date": "20/02/2024",
+                    "amount": 15000.0
+                },
+                "validation": {
+                    "status": "invalid",
+                    "issues": [
+                        "Invalid GSTIN",
+                        "Missing Invoice Number"
+                    ],
+                    "risk_score": 50
+                },
+                "reconciliation_status": "duplicate"
+            },
+            {
+                "filename": "invalid_gstin.png",
+                "fields": {
+                    "gstin": null,
+                    "invoice_no": null,
+                    "date": "18/02/2024",
+                    "amount": null
+                },
+                "validation": {
+                    "status": "invalid",
+                    "issues": [
+                        "Invalid GSTIN",
+                        "Missing Invoice Number",
+                        "Missing or Invalid Amount"
+                    ],
+                    "risk_score": 75
+                },
+                "reconciliation_status": "duplicate"
+            },
+            {
+                "filename": "missing_gstin.png",
+                "fields": {
+                    "gstin": null,
+                    "invoice_no": null,
+                    "date": "15/02/2024",
+                    "amount": null
+                },
+                "validation": {
+                    "status": "invalid",
+                    "issues": [
+                        "Invalid GSTIN",
+                        "Missing Invoice Number",
+                        "Missing or Invalid Amount"
+                    ],
+                    "risk_score": 75
+                },
+                "reconciliation_status": "duplicate"
+            },
+            {
+                "filename": "valid.png",
+                "fields": {
+                    "gstin": null,
+                    "invoice_no": null,
+                    "date": null,
+                    "amount": 11800.0
+                },
+                "validation": {
+                    "status": "invalid",
+                    "issues": [
+                        "Invalid GSTIN",
+                        "Missing Invoice Number",
+                        "Invalid or Missing Date"
+                    ],
+                    "risk_score": 75
+                },
+                "reconciliation_status": "duplicate"
+            }
+        ],
+        "reconciliation": {
+            "matched": [
+                {
+                    "filename": "duplicate2.png",
+                    "fields": {
+                        "gstin": null,
+                        "invoice_no": null,
+                        "date": "20/02/2024",
+                        "amount": 15000.0
+                    },
+                    "validation": {
+                        "status": "invalid",
+                        "issues": [
+                            "Invalid GSTIN",
+                            "Missing Invoice Number"
+                        ],
+                        "risk_score": 50
+                    },
+                    "reconciliation_status": "duplicate"
+                },
+                {
+                    "filename": "invalid_gstin.png",
+                    "fields": {
+                        "gstin": null,
+                        "invoice_no": null,
+                        "date": "18/02/2024",
+                        "amount": null
+                    },
+                    "validation": {
+                        "status": "invalid",
+                        "issues": [
+                            "Invalid GSTIN",
+                            "Missing Invoice Number",
+                            "Missing or Invalid Amount"
+                        ],
+                        "risk_score": 75
+                    },
+                    "reconciliation_status": "duplicate"
+                },
+                {
+                    "filename": "missing_gstin.png",
+                    "fields": {
+                        "gstin": null,
+                        "invoice_no": null,
+                        "date": "15/02/2024",
+                        "amount": null
+                    },
+                    "validation": {
+                        "status": "invalid",
+                        "issues": [
+                            "Invalid GSTIN",
+                            "Missing Invoice Number",
+                            "Missing or Invalid Amount"
+                        ],
+                        "risk_score": 75
+                    },
+                    "reconciliation_status": "duplicate"
+                },
+                {
+                    "filename": "valid.png",
+                    "fields": {
+                        "gstin": null,
+                        "invoice_no": null,
+                        "date": null,
+                        "amount": 11800.0
+                    },
+                    "validation": {
+                        "status": "invalid",
+                        "issues": [
+                            "Invalid GSTIN",
+                            "Missing Invoice Number",
+                            "Invalid or Missing Date"
+                        ],
+                        "risk_score": 75
+                    },
+                    "reconciliation_status": "duplicate"
+                }
+            ],
+            "mismatched": [
+                {
+                    "filename": "duplicate1.png",
+                    "fields": {
+                        "gstin": null,
+                        "invoice_no": null,
+                        "date": "20/02/2024",
+                        "amount": 15000.0
+                    },
+                    "validation": {
+                        "status": "invalid",
+                        "issues": [
+                            "Invalid GSTIN",
+                            "Missing Invoice Number"
+                        ],
+                        "risk_score": 50
+                    },
+                    "reconciliation_status": "unique"
+                }
+            ]
+        }
+    }
+]

@@ -1,0 +1,706 @@
+[
+    {
+        "filename": "invoice_duplicate_a.pdf",
+        "fields": {
+            "gstin": "18AABCT1234H1Z0",
+            "invoice_no": "INV",
+            "date": "25/03/2024",
+            "amount": 50000.0
+        },
+        "validation": {
+            "status": "valid",
+            "issues": [],
+            "risk": 0
+        }
+    },
+    {
+        "filename": "invoice_duplicate_b.pdf",
+        "fields": {
+            "gstin": "18AABCT1234H1Z0",
+            "invoice_no": "INV",
+            "date": "25/03/2024",
+            "amount": 50000.0
+        },
+        "validation": {
+            "status": "valid",
+            "issues": [],
+            "risk": 0
+        }
+    },
+    {
+        "filename": "invoice_invalid_gstin.pdf",
+        "fields": {
+            "gstin": "18AABCT1234H1Z0",
+            "invoice_no": "INV",
+            "date": "25/03/2024",
+            "amount": 50000.0
+        },
+        "validation": {
+            "status": "valid",
+            "issues": [],
+            "risk": 0
+        }
+    },
+    {
+        "filename": "invoice_missing_amount.pdf",
+        "fields": {
+            "gstin": "18AABCT1234H1Z0",
+            "invoice_no": "INV",
+            "date": "25/03/2024",
+            "amount": 50000.0
+        },
+        "validation": {
+            "status": "valid",
+            "issues": [],
+            "risk": 0
+        }
+    },
+    {
+        "filename": "invoice_valid.pdf",
+        "fields": {
+            "gstin": "18AABCT1234H1Z0",
+            "invoice_no": "INV",
+            "date": "25/03/2024",
+            "amount": 50000.0
+        },
+        "validation": {
+            "status": "valid",
+            "issues": [],
+            "risk": 0
+        }
+    },
+    {
+        "filename": "invoice_duplicate_a.pdf",
+        "fields": {
+            "gstin": "18AABCT1234H1Z0",
+            "invoice_no": "INV",
+            "date": "25/03/2024",
+            "amount": 50000.0
+        },
+        "validation": {
+            "status": "valid",
+            "issues": [],
+            "risk_score": 0
+        }
+    },
+    {
+        "filename": "invoice_invalid_gstin.pdf",
+        "fields": {
+            "gstin": "18AABCT1234H1Z0",
+            "invoice_no": "INV",
+            "date": "25/03/2024",
+            "amount": 50000.0
+        },
+        "validation": {
+            "status": "valid",
+            "issues": [],
+            "risk_score": 0
+        }
+    },
+    {
+        "filename": "invoice_missing_amount.pdf",
+        "fields": {
+            "gstin": "18AABCT1234H1Z0",
+            "invoice_no": "INV",
+            "date": "25/03/2024",
+            "amount": 50000.0
+        },
+        "validation": {
+            "status": "valid",
+            "issues": [],
+            "risk_score": 0
+        }
+    },
+    {
+        "filename": "invoice_multi_item.pdf",
+        "fields": {
+            "gstin": "18AABCT1234H1Z0",
+            "invoice_no": "INV",
+            "date": "25/03/2024",
+            "amount": 50000.0
+        },
+        "validation": {
+            "status": "valid",
+            "issues": [],
+            "risk_score": 0
+        }
+    },
+    {
+        "filename": "invoice_valid.pdf",
+        "fields": {
+            "gstin": "18AABCT1234H1Z0",
+            "invoice_no": "INV",
+            "date": "25/03/2024",
+            "amount": 50000.0
+        },
+        "validation": {
+            "status": "valid",
+            "issues": [],
+            "risk_score": 0
+        }
+    },
+    {
+        "filename": "invoice_duplicate2_real.pdf",
+        "fields": {
+            "gstin": "18AABCT1234H1Z0",
+            "invoice_no": "INV",
+            "date": "25/03/2024",
+            "amount": 50000.0
+        },
+        "validation": {
+            "status": "valid",
+            "issues": [],
+            "risk_score": 0
+        }
+    },
+    {
+        "filename": "invoice_invalid_gstin_real.pdf",
+        "fields": {
+            "gstin": "18AABCT1234H1Z0",
+            "invoice_no": "INV",
+            "date": "25/03/2024",
+            "amount": 50000.0
+        },
+        "validation": {
+            "status": "valid",
+            "issues": [],
+            "risk_score": 0
+        }
+    },
+    {
+        "filename": "invoice_missing_amount_real.pdf",
+        "fields": {
+            "gstin": "18AABCT1234H1Z0",
+            "invoice_no": "INV",
+            "date": "25/03/2024",
+            "amount": 50000.0
+        },
+        "validation": {
+            "status": "valid",
+            "issues": [],
+            "risk_score": 0
+        }
+    },
+    {
+        "filename": "invoice_missing_gstin_real.pdf",
+        "fields": {
+            "gstin": "18AABCT1234H1Z0",
+            "invoice_no": "INV",
+            "date": "25/03/2024",
+            "amount": 50000.0
+        },
+        "validation": {
+            "status": "valid",
+            "issues": [],
+            "risk_score": 0
+        }
+    },
+    {
+        "filename": "invoice_valid_real.pdf",
+        "fields": {
+            "gstin": "18AABCT1234H1Z0",
+            "invoice_no": "INV",
+            "date": "25/03/2024",
+            "amount": 50000.0
+        },
+        "validation": {
+            "status": "valid",
+            "issues": [],
+            "risk_score": 0
+        }
+    },
+    {
+        "filename": "duplicate2.png",
+        "fields": {
+            "gstin": null,
+            "invoice_no": null,
+            "date": "20/02/2024",
+            "amount": 15000.0
+        },
+        "validation": {
+            "status": "invalid",
+            "issues": [
+                "Invalid GSTIN",
+                "Missing Invoice Number"
+            ],
+            "risk_score": 50
+        }
+    },
+    {
+        "filename": "invalid_gstin.png",
+        "fields": {
+            "gstin": null,
+            "invoice_no": null,
+            "date": "18/02/2024",
+            "amount": null
+        },
+        "validation": {
+            "status": "invalid",
+            "issues": [
+                "Invalid GSTIN",
+                "Missing Invoice Number",
+                "Missing or Invalid Amount"
+            ],
+            "risk_score": 75
+        }
+    },
+    {
+        "filename": "missing_amount.png",
+        "fields": {
+            "gstin": null,
+            "invoice_no": null,
+            "date": "21/02/2024",
+            "amount": null
+        },
+        "validation": {
+            "status": "invalid",
+            "issues": [
+                "Invalid GSTIN",
+                "Missing Invoice Number",
+                "Missing or Invalid Amount"
+            ],
+            "risk_score": 75
+        }
+    },
+    {
+        "filename": "missing_gstin.png",
+        "fields": {
+            "gstin": null,
+            "invoice_no": null,
+            "date": "15/02/2024",
+            "amount": null
+        },
+        "validation": {
+            "status": "invalid",
+            "issues": [
+                "Invalid GSTIN",
+                "Missing Invoice Number",
+                "Missing or Invalid Amount"
+            ],
+            "risk_score": 75
+        }
+    },
+    {
+        "filename": "valid.png",
+        "fields": {
+            "gstin": null,
+            "invoice_no": null,
+            "date": null,
+            "amount": 11800.0
+        },
+        "validation": {
+            "status": "invalid",
+            "issues": [
+                "Invalid GSTIN",
+                "Missing Invoice Number",
+                "Invalid or Missing Date"
+            ],
+            "risk_score": 75
+        }
+    },
+    {
+        "filename": "duplicate1.png",
+        "fields": {
+            "gstin": null,
+            "invoice_no": null,
+            "date": "20/02/2024",
+            "amount": 15000.0
+        },
+        "validation": {
+            "status": "invalid",
+            "issues": [
+                "Invalid GSTIN",
+                "Missing Invoice Number"
+            ],
+            "risk_score": 50
+        }
+    },
+    {
+        "filename": "invalid_gstin.png",
+        "fields": {
+            "gstin": null,
+            "invoice_no": null,
+            "date": "18/02/2024",
+            "amount": null
+        },
+        "validation": {
+            "status": "invalid",
+            "issues": [
+                "Invalid GSTIN",
+                "Missing Invoice Number",
+                "Missing or Invalid Amount"
+            ],
+            "risk_score": 75
+        }
+    },
+    {
+        "filename": "missing_amount.png",
+        "fields": {
+            "gstin": null,
+            "invoice_no": null,
+            "date": "21/02/2024",
+            "amount": null
+        },
+        "validation": {
+            "status": "invalid",
+            "issues": [
+                "Invalid GSTIN",
+                "Missing Invoice Number",
+                "Missing or Invalid Amount"
+            ],
+            "risk_score": 75
+        }
+    },
+    {
+        "filename": "missing_gstin.png",
+        "fields": {
+            "gstin": null,
+            "invoice_no": null,
+            "date": "15/02/2024",
+            "amount": null
+        },
+        "validation": {
+            "status": "invalid",
+            "issues": [
+                "Invalid GSTIN",
+                "Missing Invoice Number",
+                "Missing or Invalid Amount"
+            ],
+            "risk_score": 75
+        }
+    },
+    {
+        "filename": "valid.png",
+        "fields": {
+            "gstin": null,
+            "invoice_no": null,
+            "date": null,
+            "amount": 11800.0
+        },
+        "validation": {
+            "status": "invalid",
+            "issues": [
+                "Invalid GSTIN",
+                "Missing Invoice Number",
+                "Invalid or Missing Date"
+            ],
+            "risk_score": 75
+        }
+    },
+    {
+        "filename": "missing_amount.png",
+        "fields": {
+            "gstin": null,
+            "invoice_no": null,
+            "date": "21/02/2024",
+            "amount": null
+        },
+        "validation": {
+            "status": "invalid",
+            "issues": [
+                "Invalid GSTIN",
+                "Missing Invoice Number",
+                "Missing or Invalid Amount"
+            ],
+            "risk_score": 75
+        }
+    },
+    {
+        "filename": "duplicate2.png",
+        "fields": {
+            "gstin": null,
+            "invoice_no": null,
+            "date": "20/02/2024",
+            "amount": 15000.0
+        },
+        "validation": {
+            "status": "invalid",
+            "issues": [
+                "Invalid GSTIN",
+                "Missing Invoice Number"
+            ],
+            "risk_score": 50
+        }
+    },
+    {
+        "filename": "valid.png",
+        "fields": {
+            "gstin": null,
+            "invoice_no": null,
+            "date": null,
+            "amount": 11800.0
+        },
+        "validation": {
+            "status": "invalid",
+            "issues": [
+                "Invalid GSTIN",
+                "Missing Invoice Number",
+                "Invalid or Missing Date"
+            ],
+            "risk_score": 75
+        }
+    },
+    {
+        "filename": "duplicate1.png",
+        "fields": {
+            "gstin": null,
+            "invoice_no": null,
+            "date": "20/02/2024",
+            "amount": 15000.0
+        },
+        "validation": {
+            "status": "invalid",
+            "issues": [
+                "Invalid GSTIN",
+                "Missing Invoice Number"
+            ],
+            "risk_score": 50
+        }
+    },
+    {
+        "filename": "duplicate1.png",
+        "fields": {
+            "gstin": null,
+            "invoice_no": null,
+            "date": "20/02/2024",
+            "amount": 15000.0
+        },
+        "validation": {
+            "status": "invalid",
+            "issues": [
+                "Invalid GSTIN",
+                "Missing Invoice Number"
+            ],
+            "risk_score": 50
+        }
+    },
+    {
+        "filename": "duplicate2.png",
+        "fields": {
+            "gstin": null,
+            "invoice_no": null,
+            "date": "20/02/2024",
+            "amount": 15000.0
+        },
+        "validation": {
+            "status": "invalid",
+            "issues": [
+                "Invalid GSTIN",
+                "Missing Invoice Number"
+            ],
+            "risk_score": 50
+        }
+    },
+    {
+        "filename": "invalid_gstin.png",
+        "fields": {
+            "gstin": null,
+            "invoice_no": null,
+            "date": "18/02/2024",
+            "amount": null
+        },
+        "validation": {
+            "status": "invalid",
+            "issues": [
+                "Invalid GSTIN",
+                "Missing Invoice Number",
+                "Missing or Invalid Amount"
+            ],
+            "risk_score": 75
+        }
+    },
+    {
+        "filename": "missing_amount.png",
+        "fields": {
+            "gstin": null,
+            "invoice_no": null,
+            "date": "21/02/2024",
+            "amount": null
+        },
+        "validation": {
+            "status": "invalid",
+            "issues": [
+                "Invalid GSTIN",
+                "Missing Invoice Number",
+                "Missing or Invalid Amount"
+            ],
+            "risk_score": 75
+        }
+    },
+    {
+        "filename": "valid.png",
+        "fields": {
+            "gstin": null,
+            "invoice_no": null,
+            "date": null,
+            "amount": 11800.0
+        },
+        "validation": {
+            "status": "invalid",
+            "issues": [
+                "Invalid GSTIN",
+                "Missing Invoice Number",
+                "Invalid or Missing Date"
+            ],
+            "risk_score": 75
+        }
+    },
+    {
+        "filename": "duplicate1.png",
+        "fields": {
+            "gstin": null,
+            "invoice_no": null,
+            "date": "20/02/2024",
+            "amount": 15000.0
+        },
+        "validation": {
+            "status": "invalid",
+            "issues": [
+                "Invalid GSTIN",
+                "Missing Invoice Number"
+            ],
+            "risk_score": 50
+        }
+    },
+    {
+        "filename": "duplicate2.png",
+        "fields": {
+            "gstin": null,
+            "invoice_no": null,
+            "date": "20/02/2024",
+            "amount": 15000.0
+        },
+        "validation": {
+            "status": "invalid",
+            "issues": [
+                "Invalid GSTIN",
+                "Missing Invoice Number"
+            ],
+            "risk_score": 50
+        }
+    },
+    {
+        "filename": "missing_amount.png",
+        "fields": {
+            "gstin": null,
+            "invoice_no": null,
+            "date": "21/02/2024",
+            "amount": null
+        },
+        "validation": {
+            "status": "invalid",
+            "issues": [
+                "Invalid GSTIN",
+                "Missing Invoice Number",
+                "Missing or Invalid Amount"
+            ],
+            "risk_score": 75
+        }
+    },
+    {
+        "filename": "valid.png",
+        "fields": {
+            "gstin": null,
+            "invoice_no": null,
+            "date": null,
+            "amount": 11800.0
+        },
+        "validation": {
+            "status": "invalid",
+            "issues": [
+                "Invalid GSTIN",
+                "Missing Invoice Number",
+                "Invalid or Missing Date"
+            ],
+            "risk_score": 75
+        }
+    },
+    {
+        "filename": "duplicate1.png",
+        "fields": {
+            "gstin": null,
+            "invoice_no": null,
+            "date": "20/02/2024",
+            "amount": 15000.0
+        },
+        "validation": {
+            "status": "invalid",
+            "issues": [
+                "Invalid GSTIN",
+                "Missing Invoice Number"
+            ],
+            "risk_score": 50
+        }
+    },
+    {
+        "filename": "duplicate2.png",
+        "fields": {
+            "gstin": null,
+            "invoice_no": null,
+            "date": "20/02/2024",
+            "amount": 15000.0
+        },
+        "validation": {
+            "status": "invalid",
+            "issues": [
+                "Invalid GSTIN",
+                "Missing Invoice Number"
+            ],
+            "risk_score": 50
+        }
+    },
+    {
+        "filename": "invalid_gstin.png",
+        "fields": {
+            "gstin": null,
+            "invoice_no": null,
+            "date": "18/02/2024",
+            "amount": null
+        },
+        "validation": {
+            "status": "invalid",
+            "issues": [
+                "Invalid GSTIN",
+                "Missing Invoice Number",
+                "Missing or Invalid Amount"
+            ],
+            "risk_score": 75
+        }
+    },
+    {
+        "filename": "missing_gstin.png",
+        "fields": {
+            "gstin": null,
+            "invoice_no": null,
+            "date": "15/02/2024",
+            "amount": null
+        },
+        "validation": {
+            "status": "invalid",
+            "issues": [
+                "Invalid GSTIN",
+                "Missing Invoice Number",
+                "Missing or Invalid Amount"
+            ],
+            "risk_score": 75
+        }
+    },
+    {
+        "filename": "valid.png",
+        "fields": {
+            "gstin": null,
+            "invoice_no": null,
+            "date": null,
+            "amount": 11800.0
+        },
+        "validation": {
+            "status": "invalid",
+            "issues": [
+                "Invalid GSTIN",
+                "Missing Invoice Number",
+                "Invalid or Missing Date"
+            ],
+            "risk_score": 75
+        }
+    }
+]
