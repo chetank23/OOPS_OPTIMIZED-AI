@@ -702,5 +702,107 @@
             ],
             "risk_score": 75
         }
+    },
+    {
+        "filename": "Photo - arun sharma.png",
+        "fields": {
+            "gstin": "18AABCT1234H1Z0",
+            "invoice_no": "INV",
+            "date": "25/03/2024",
+            "amount": 50000.0,
+            "invoice_amount": 50000.0,
+            "gst_amount": 7627.12,
+            "gst_amount_source": "estimated_default_18_percent"
+        },
+        "validation": {
+            "status": "valid",
+            "issues": [],
+            "risk_score": 0
+        },
+        "reconciliation_status": "duplicate",
+        "ai_result": {
+            "anomaly": false,
+            "risk_score": 0.2511
+        },
+        "reconciliation_result": {
+            "status": "duplicate",
+            "duplicates": [
+                {
+                    "filename": "invoice_duplicate_b.pdf",
+                    "gstin": "18AABCT1234H1Z0",
+                    "invoice_no": "INV"
+                },
+                {
+                    "filename": "invoice_invalid_gstin.pdf",
+                    "gstin": "18AABCT1234H1Z0",
+                    "invoice_no": "INV"
+                },
+                {
+                    "filename": "invoice_missing_amount.pdf",
+                    "gstin": "18AABCT1234H1Z0",
+                    "invoice_no": "INV"
+                },
+                {
+                    "filename": "invoice_valid.pdf",
+                    "gstin": "18AABCT1234H1Z0",
+                    "invoice_no": "INV"
+                },
+                {
+                    "filename": "invoice_duplicate_a.pdf",
+                    "gstin": "18AABCT1234H1Z0",
+                    "invoice_no": "INV"
+                },
+                {
+                    "filename": "invoice_invalid_gstin.pdf",
+                    "gstin": "18AABCT1234H1Z0",
+                    "invoice_no": "INV"
+                },
+                {
+                    "filename": "invoice_missing_amount.pdf",
+                    "gstin": "18AABCT1234H1Z0",
+                    "invoice_no": "INV"
+                },
+                {
+                    "filename": "invoice_multi_item.pdf",
+                    "gstin": "18AABCT1234H1Z0",
+                    "invoice_no": "INV"
+                },
+                {
+                    "filename": "invoice_valid.pdf",
+                    "gstin": "18AABCT1234H1Z0",
+                    "invoice_no": "INV"
+                },
+                {
+                    "filename": "invoice_duplicate2_real.pdf",
+                    "gstin": "18AABCT1234H1Z0",
+                    "invoice_no": "INV"
+                },
+                {
+                    "filename": "invoice_invalid_gstin_real.pdf",
+                    "gstin": "18AABCT1234H1Z0",
+                    "invoice_no": "INV"
+                },
+                {
+                    "filename": "invoice_missing_amount_real.pdf",
+                    "gstin": "18AABCT1234H1Z0",
+                    "invoice_no": "INV"
+                },
+                {
+                    "filename": "invoice_missing_gstin_real.pdf",
+                    "gstin": "18AABCT1234H1Z0",
+                    "invoice_no": "INV"
+                },
+                {
+                    "filename": "invoice_valid_real.pdf",
+                    "gstin": "18AABCT1234H1Z0",
+                    "invoice_no": "INV"
+                }
+            ],
+            "summary": {
+                "matched": 42,
+                "mismatched": 2
+            }
+        },
+        "report": "reports/report_20260417_232823.csv"
     }
 ]

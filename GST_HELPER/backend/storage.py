@@ -1,36 +1,64 @@
-import json, os
+from __future__ import annotations
 
-INVOICE_FILE = "data/invoices.json"
-RESULT_FILE = "data/results.json"
+import json
+from pathlib import Path
+from typing import Any
 
-def init_storage():
-    os.makedirs("data", exist_ok=True)
-
-    if not os.path.exists(INVOICE_FILE):
-        with open(INVOICE_FILE, "w") as f:
-            json.dump([], f)
-
-    if not os.path.exists(RESULT_FILE):
-        with open(RESULT_FILE, "w") as f:
-            json.dump([], f)
+BASE_DIR = Path(__file__).resolve().parent
+DATA_DIR = BASE_DIR / "data"
+INVOICE_FILE = DATA_DIR / "invoices.json"
+RESULT_FILE = DATA_DIR / "results.json"
 
 
-def save_invoice(data):
-    with open(INVOICE_FILE, "r+") as f:
-        items = json.load(f)
-        items.append(data)
-        f.seek(0)
-        json.dump(items, f, indent=4)
+class StorageError(Exception):
+    """Raised when invoice persistence cannot be completed safely."""
 
 
-def save_result(data):
-    with open(RESULT_FILE, "r+") as f:
-        items = json.load(f)
-        items.append(data)
-        f.seek(0)
-        json.dump(items, f, indent=4)
+def init_storage() -> None:
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+
+    for file_path in (INVOICE_FILE, RESULT_FILE):
+        if not file_path.exists():
+            _write_items(file_path, [])
 
 
-def get_all():
-    with open(INVOICE_FILE) as f:
-        return json.load(f)
+def save_invoice(data: dict[str, Any]) -> None:
+    items = _read_items(INVOICE_FILE)
+    items.append(data)
+    _write_items(INVOICE_FILE, items)
+
+
+def save_result(data: dict[str, Any]) -> None:
+    items = _read_items(RESULT_FILE)
+    items.append(data)
+    _write_items(RESULT_FILE, items)
+
+
+def get_all() -> list[dict[str, Any]]:
+    return _read_items(INVOICE_FILE)
+
+
+def _read_items(path: Path) -> list[dict[str, Any]]:
+    if not path.exists():
+        return []
+
+    try:
+        with path.open("r", encoding="utf-8") as file:
+            payload = json.load(file)
+    except json.JSONDecodeError as exc:
+        raise StorageError(f"{path.name} contains invalid JSON.") from exc
+    except OSError as exc:
+        raise StorageError(f"Unable to read {path.name}.") from exc
+
+    if not isinstance(payload, list):
+        raise StorageError(f"{path.name} must store a JSON array.")
+
+    return payload
+
+
+def _write_items(path: Path, items: list[dict[str, Any]]) -> None:
+    try:
+        with path.open("w", encoding="utf-8") as file:
+            json.dump(items, file, indent=4)
+    except OSError as exc:
+        raise StorageError(f"Unable to write {path.name}.") from exc
