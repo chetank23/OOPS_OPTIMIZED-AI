@@ -1,100 +1,141 @@
-import { useState } from 'preact/hooks'
-import preactLogo from './assets/preact.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './app.css'
 
 export function App() {
-  const [count, setCount] = useState(0)
+  const invoiceRows = [
+    ['GRP-001', 'Glass desk lamp', '2', '2,400', '12%'],
+    ['GRP-002', 'GST filing support', '1', '8,500', '18%'],
+    ['GRP-003', 'Thermal printer paper', '6', '180', '5%'],
+  ]
+
+  const steps = [
+    'Capture invoice from PDF, photo, or email.',
+    'Auto-read GSTIN, HSN, tax slabs, and totals.',
+    'Validate before filing or export to your ERP.',
+  ]
+
+  const metrics = [
+    ['Accuracy', '99.2%'],
+    ['Invoices today', '128'],
+    ['Avg. review time', '14 sec'],
+    ['Mismatch alerts', '03'],
+  ]
 
   return (
-    <>
-      <section id="center">
-        <div class="hero">
-          <img src={heroImg} class="base" width="170" height="179" alt="" />
-          <img src={preactLogo} class="framework" alt="Preact logo" />
-          <img src={viteLogo} class="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/app.jsx</code> and save to test <code>HMR</code>
+    <main class="shell">
+      <section class="hero-panel">
+        <div class="hero-copy">
+          <span class="eyebrow">GST Invoice AI</span>
+          <h1>Turn messy bills into clean, filed-ready GST data.</h1>
+          <p class="lead">
+            Review invoices faster with document capture, GSTIN validation, tax breakdowns,
+            and export-ready summaries in one workspace.
           </p>
-        </div>
-        <button class="counter" onClick={() => setCount((count) => count + 1)}>
-          Count is {count}
-        </button>
-      </section>
 
-      <div class="ticks"></div>
+          <div class="hero-actions">
+            <a class="primary" href="#workspace">
+              Scan invoice
+            </a>
+            <a class="secondary" href="#review">
+              Open review queue
+            </a>
+          </div>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg class="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img class="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://preactjs.com/" target="_blank">
-                <img class="button-icon" src={preactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
+          <ul class="metric-grid" aria-label="Platform metrics">
+            {metrics.map(([label, value]) => (
+              <li>
+                <strong>{value}</strong>
+                <span>{label}</span>
+              </li>
+            ))}
           </ul>
         </div>
-        <div id="social">
-          <svg class="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg class="button-icon" role="presentation" aria-hidden="true">
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg class="button-icon" role="presentation" aria-hidden="true">
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg class="button-icon" role="presentation" aria-hidden="true">
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg class="button-icon" role="presentation" aria-hidden="true">
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
+
+        <div class="hero-card" id="workspace">
+          <div class="card-header">
+            <span>Live workspace</span>
+            <span class="status">Active</span>
+          </div>
+
+          <div class="upload-zone">
+            <div class="upload-icon">⤒</div>
+            <div>
+              <h2>Drop invoices, receipts, or GST statements</h2>
+              <p>PDF, JPG, PNG, and scanned email attachments supported.</p>
+            </div>
+          </div>
+
+          <div class="scan-summary">
+            <div>
+              <span>Supplier</span>
+              <strong>Shree Bharat Traders</strong>
+            </div>
+            <div>
+              <span>GSTIN</span>
+              <strong>27AAJCS2418Q1ZV</strong>
+            </div>
+            <div>
+              <span>Invoice total</span>
+              <strong>₹13,956.00</strong>
+            </div>
+            <div>
+              <span>Risk score</span>
+              <strong class="risk-low">Low</strong>
+            </div>
+          </div>
+
+          <div class="invoice-table" id="review">
+            <div class="table-head">
+              <span>Item</span>
+              <span>Qty</span>
+              <span>Value</span>
+              <span>Tax</span>
+            </div>
+            {invoiceRows.map(([code, item, qty, value, tax]) => (
+              <div class="table-row">
+                <span>
+                  <strong>{code}</strong>
+                  <small>{item}</small>
+                </span>
+                <span>{qty}</span>
+                <span>₹{value}</span>
+                <span>{tax}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
-      <div class="ticks"></div>
-      <section id="spacer"></section>
-    </>
+      <section class="feature-grid">
+        <div class="feature-card">
+          <h2>What the assistant handles</h2>
+          <ul>
+            {steps.map((step) => (
+              <li>{step}</li>
+            ))}
+          </ul>
+        </div>
+
+        <div class="feature-card soft">
+          <h2>Validation controls</h2>
+          <ul class="checks">
+            <li>GSTIN format check</li>
+            <li>Tax slab consistency check</li>
+            <li>Duplicate invoice detection</li>
+            <li>Mismatch alerts before filing</li>
+          </ul>
+        </div>
+
+        <div class="feature-card callout">
+          <h2>Ready for ERP export</h2>
+          <p>
+            Push clean invoice data into accounting workflows with structured totals,
+            supplier details, and item-level tax values.
+          </p>
+          <a class="inline-link" href="#workspace">
+            Preview output
+          </a>
+        </div>
+      </section>
+    </main>
   )
 }
